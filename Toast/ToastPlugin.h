@@ -27,6 +27,12 @@ public:
      * @return 初始化状态
      */
     virtual bool delayedInitialize() = 0;
+
+    /**
+     * @brief 显示提示
+     * @param text 提示内容
+     */
+    virtual void showTip(const QString& text) = 0;
 };
 
 QT_BEGIN_NAMESPACE
