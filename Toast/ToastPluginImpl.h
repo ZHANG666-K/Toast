@@ -29,4 +29,10 @@ public:
      * @return 初始化状态
      */
     bool delayedInitialize() override;
+
+    /**
+     * @brief 显示提示
+     * @param text 提示内容
+     */
+    void showTip(const QString& text) override;
 };

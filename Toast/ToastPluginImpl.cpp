@@ -1,5 +1,7 @@
 ﻿#include "ToastPluginImpl.h"
 
+#include "Toast.h"
+
 ToastPluginImpl::~ToastPluginImpl()
 {
 }
@@ -17,4 +19,9 @@ bool ToastPluginImpl::extensionsInitialize()
 bool ToastPluginImpl::delayedInitialize()
 {
     return true;
+}
+
+void ToastPluginImpl::showTip(const QString& text)
+{
+    Toast::showTip(text);
 }

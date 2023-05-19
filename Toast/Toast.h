@@ -1,7 +1,5 @@
 ﻿#pragma once
 
-#include "toast_global.h"
-
 #include <QReadWriteLock>
 #include <QWidget>
 
@@ -10,7 +8,7 @@ class QReadWriteLock;
 namespace Ui {
 class ToastClass;
 }
-class TOAST_EXPORT Toast : public QWidget {
+class Toast : public QWidget {
     Q_OBJECT;
 
 public:
