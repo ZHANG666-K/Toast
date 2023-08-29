@@ -92,7 +92,7 @@ void Toast::paintEvent(QPaintEvent* event)
     QPainter paint(this);
     auto kBackgroundColor = QColor(255, 255, 255);
     // 透明度
-    kBackgroundColor.setAlpha(0.2 * 255);
+    kBackgroundColor.setAlpha(0.0 * 255);
     paint.setRenderHint(QPainter::Antialiasing, true);
     paint.setPen(Qt::NoPen);
     // 设置画刷形式
