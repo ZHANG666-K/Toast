@@ -1,10 +1,21 @@
 ﻿#pragma once
 
-#include "toast_global.h"
-
 #include "PluginInterface.h"
 
-class TOAST_EXPORT ToastPlugin : public PluginInterface {
+// 如果插件未加载则使用默认QMessageBox实现
+#ifndef TOAST_TIP
+#define TOAST_TIP(text)                                      \
+    {                                                        \
+        auto&& opt = GetPluginPtr(ToastPlugin);              \
+        if (opt.has_value()) {                               \
+            opt.value()->showTip(text);                      \
+        } else {                                             \
+            QMessageBox::information(nullptr, "提示", text); \
+        }                                                    \
+    }
+#endif // TOAST_TIP
+
+class ToastPlugin : public PluginInterface {
 public:
     virtual ~ToastPlugin() = 0;
 

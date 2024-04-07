@@ -84,6 +84,7 @@ void Toast::showTip(const QString& text)
         QScreen* pScreen = QGuiApplication::primaryScreen();
         toast->move((pScreen->size().width() - toast->width()) / 2, pScreen->size().height() * 7 / 10);
         toast->showAnimation();
+        qDebug() << "toast show:" << text;
     });
 }
 
