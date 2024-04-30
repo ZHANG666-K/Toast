@@ -9,6 +9,10 @@
 #define TOAST_TIP(text) Toast::ShowTip(text)
 #endif // !TOAST_TIP
 
+#ifndef TOAST_TIP_P
+#define TOAST_TIP_P(text, parent) Toast::ShowTip(text, parent)
+#endif // !TOAST_TIP_P
+
 class TOAST_EXPORT Toast : public QWidget {
     Q_OBJECT
 
@@ -25,5 +29,5 @@ public:
      * @brief 静态调用
      * @param text 文字内容
      */
-    static void ShowTip(const QString& text);
+    static void ShowTip(const QString& text, QWidget* parent = nullptr);
 };

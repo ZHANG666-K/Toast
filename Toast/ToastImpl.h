@@ -26,7 +26,7 @@ public:
      * @brief 显示提示
      * @param text 提示内容
      */
-    static void showTip(const QString& text);
+    static void ShowTip(const QString& text, QWidget* parent);
 
 protected:
     virtual void paintEvent(QPaintEvent* event);

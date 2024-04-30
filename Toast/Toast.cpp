@@ -11,7 +11,7 @@ Toast::~Toast()
 {
 }
 
-void Toast::ShowTip(const QString& text)
+void Toast::ShowTip(const QString& text, QWidget* parent)
 {
-    Toast::ShowTip(text);
+    ToastImpl::ShowTip(text, parent);
 }

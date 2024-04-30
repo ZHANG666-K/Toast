@@ -59,9 +59,9 @@ void ToastImpl::showAnimation(int timeout /*= 2000*/)
     });
 }
 
-void ToastImpl::showTip(const QString& text)
+void ToastImpl::ShowTip(const QString& text, QWidget* parent)
 {
-    QTimer::singleShot(0, QCoreApplication::instance(), [text]() {
+    QTimer::singleShot(0, QCoreApplication::instance(), [text, parent]() {
         {
             QReadLocker locker(&Lock());
             // 存在的全部升高宽度+20px
@@ -80,9 +80,14 @@ void ToastImpl::showTip(const QString& text)
         // 设置完文本后调整下大小
         toast->adjustSize();
 
-        // 默认显示位于主屏的70%高度位置，依次叠加升高宽度+20px
-        QScreen* pScreen = QGuiApplication::primaryScreen();
-        toast->move((pScreen->size().width() - toast->width()) / 2, pScreen->size().height() * 7 / 10);
+        if (parent == nullptr) {
+            // 默认显示位于主屏的70%高度位置，依次叠加升高宽度+20px
+            QScreen* pScreen = QGuiApplication::primaryScreen();
+            toast->move((pScreen->size().width() - toast->width()) / 2, pScreen->size().height() * 7 / 10);
+        } else {
+            // 显示在parent的正中间
+            toast->move(parent->x() + (parent->width() - toast->width()) / 2, parent->y() + (parent->height() - toast->height()) / 2);
+        }
         toast->showAnimation();
         qDebug() << "toast show:" << text;
     });
