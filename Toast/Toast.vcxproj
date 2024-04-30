@@ -98,13 +98,11 @@
     <PublicIncludeDirectories>..\Toast</PublicIncludeDirectories>
     <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
     <AllProjectBMIsArePublic>true</AllProjectBMIsArePublic>
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\plugins\$(ProjectName)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Qt5Debug|x64'">
     <PublicIncludeDirectories>..\Toast</PublicIncludeDirectories>
     <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
     <AllProjectBMIsArePublic>true</AllProjectBMIsArePublic>
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\plugins\$(ProjectName)Qt5\</OutDir>
     <TargetName>$(ProjectName)Qt5</TargetName>
     <IncludePath>..\..\QPluginManager\QPluginInterface;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)$(Platform)\$(Configuration);$(LibraryPath);C:\Program Files (x86)\BCGSoft\BCGControlBarPro\bin64</LibraryPath>
@@ -113,13 +111,11 @@
     <PublicIncludeDirectories>..\Toast</PublicIncludeDirectories>
     <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
     <AllProjectBMIsArePublic>true</AllProjectBMIsArePublic>
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\plugins\$(ProjectName)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Qt5Release|x64'">
     <PublicIncludeDirectories>..\Toast</PublicIncludeDirectories>
     <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
     <AllProjectBMIsArePublic>true</AllProjectBMIsArePublic>
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\plugins\$(ProjectName)Qt5\</OutDir>
     <TargetName>$(ProjectName)Qt5</TargetName>
   </PropertyGroup>
   <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Qt5Debug|x64'">
