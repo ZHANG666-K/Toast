@@ -200,20 +200,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Toast.cpp" />
-    <ClCompile Include="ToastPluginImpl.cpp" />
-    <QtMoc Include="ToastPluginImpl.h" />
+    <ClCompile Include="ToastImpl.cpp" />
+    <ClInclude Include="ToastImpl.h" />
     <QtMoc Include="Toast.h" />
     <ClInclude Include="toast_global.h" />
-    <ClInclude Include="ToastPlugin.h" />
-    <ClCompile Include="ToastPlugin.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="Toast.ui" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\QPluginManager\QPluginInterface\QPluginInterface.vcxproj">
-      <Project>{6109245d-0476-4a22-ba69-b38175e32b29}</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

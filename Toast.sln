@@ -5,10 +5,6 @@ VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Toast", "Toast\Toast.vcxproj", "{6481E78A-2E78-4E65-B975-B908FD00D9D7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QPluginManager", "..\QPluginManager\QPluginManager\QPluginManager.vcxproj", "{EA98EF0F-BDFE-47C3-8D37-60203985DAF9}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QPluginInterface", "..\QPluginManager\QPluginInterface\QPluginInterface.vcxproj", "{6109245D-0476-4A22-BA69-B38175E32B29}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -19,14 +15,6 @@ Global
 		{6481E78A-2E78-4E65-B975-B908FD00D9D7}.Debug|x64.Build.0 = Debug|x64
 		{6481E78A-2E78-4E65-B975-B908FD00D9D7}.Release|x64.ActiveCfg = Release|x64
 		{6481E78A-2E78-4E65-B975-B908FD00D9D7}.Release|x64.Build.0 = Release|x64
-		{EA98EF0F-BDFE-47C3-8D37-60203985DAF9}.Debug|x64.ActiveCfg = Debug|x64
-		{EA98EF0F-BDFE-47C3-8D37-60203985DAF9}.Debug|x64.Build.0 = Debug|x64
-		{EA98EF0F-BDFE-47C3-8D37-60203985DAF9}.Release|x64.ActiveCfg = Release|x64
-		{EA98EF0F-BDFE-47C3-8D37-60203985DAF9}.Release|x64.Build.0 = Release|x64
-		{6109245D-0476-4A22-BA69-B38175E32B29}.Debug|x64.ActiveCfg = Debug|x64
-		{6109245D-0476-4A22-BA69-B38175E32B29}.Debug|x64.Build.0 = Debug|x64
-		{6109245D-0476-4A22-BA69-B38175E32B29}.Release|x64.ActiveCfg = Release|x64
-		{6109245D-0476-4A22-BA69-B38175E32B29}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
