@@ -5,6 +5,10 @@
 #include <QReadWriteLock>
 #include <QWidget>
 
+#ifndef TOAST_TIP
+#define TOAST_TIP(text) Toast::ShowTip(text)
+#endif // !TOAST_TIP
+
 class TOAST_EXPORT Toast : public QWidget {
     Q_OBJECT
 
