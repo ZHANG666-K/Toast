@@ -1,6 +1,7 @@
 ﻿#include "ToastImpl.h"
 
 #include <QCoreApplication>
+#include <QDebug>
 #include <QPainter>
 #include <QPropertyAnimation>
 #include <QScreen>
