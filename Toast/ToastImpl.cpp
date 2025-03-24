@@ -90,7 +90,7 @@ void ToastImpl::ShowTip(const QString& text, QWidget* parent)
             toast->move(parent->x() + (parent->width() - toast->width()) / 2, parent->y() + (parent->height() - toast->height()) / 2);
         }
         toast->showAnimation();
-        qDebug() << "toast show:" << text;
+        qInfo() << text;
     });
 }
 
